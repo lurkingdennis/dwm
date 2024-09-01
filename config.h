@@ -105,6 +105,9 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_gray2, "-sf", col_gray4, "-p", "run: ", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
+/* For XF86 keys */
+#include <X11/XF86keysym.h>
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
@@ -159,6 +162,10 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|Mod4Mask,             XK_BackSpace,      quit,           {0} },
+
+	{ MODKEY|ShiftMask,             XF86XK_AudioLowerVolume,      spawn,           SHCMD("pamixer --decrease 5") },
+	{ MODKEY|ShiftMask,             XF86XK_AudioRaiseVolume,      spawn,           SHCMD("pamixer --increase 5") },
+	{ MODKEY|ShiftMask,             XF86XK_AudioMute,      spawn,           SHCMD("pamixer --toggle-mute") },
 
 	/* ---------------- Programs -------------------- */
 	
