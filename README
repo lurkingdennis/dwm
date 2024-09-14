@@ -1,7 +1,7 @@
-lurkingdennis's build of dwm - github.com/lurkingdennis
+pr0xy's build of dwm - github.com/pr0xy22
 ============================
 
-# patches/:
+# see patches/:
 
 ($) for aesthetics
 (*) vital to my workflow
@@ -9,11 +9,15 @@ lurkingdennis's build of dwm - github.com/lurkingdennis
 $ dwm-vanitygaps-6.4.diff - provides options to change gaps and also comes with different layouts.
 $ dwm-colorbar-6.3.diff - allows to change colors of dwm's bar
 $ dwm-hide_vacant_tags-6.4.diff - hides tags where there are no active windows.
-$ dwm-statuspadding-6.3.diff - adds inner padding to dwm's bar.
-$ dwm-noborder-6.2.diff - removes borders when there is only 1 window
+$ dwm-noborder-6.2.diff - removes borders when there is only 1 window. monocole effect like in bspwm.
+*/$ dwm-vanitygaps-6.4.diff - provides options to change gaps and also comes with different layouts.
 */$ dwm-alwayscenter-20200625-f04cac6.diff  - spawns windows in center instead of left top corner.
+*/$ dwm-systray-20230922-9f88553.diff  - spawns windows in center instead of left top corner.
 * dwm-attachbelow-6.2.diff - spawns new clients under the focused client.
 * dwm-stacker-6.2.diff - allows to move the focused client around the stack. 
+
+removed:
+dwm-statuspadding-6.3.diff - adds inner padding to dwm's bar.
 
 dwm - dynamic window manager
 ============================
