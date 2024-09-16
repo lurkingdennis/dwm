@@ -17,8 +17,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Terminess Nerd Font:size=9" };
 static const char dmenufont[]       = "Terminess Nerd Font:size=9";
-static const char col_gray1[]       = "#000000"; // original #222222
-static const char col_gray2[]       = "#333333"; // original #444444
+static const char col_gray1[]       = "#060606"; // original #222222
+static const char col_gray2[]       = "#363838"; // original #444444
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
